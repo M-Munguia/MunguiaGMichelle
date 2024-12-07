@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="Donate to Pawfect Match to support our mission of providing a loving home for cats in need. Your generosity helps us feed, vaccinate, and care for our feline friends.">
+		<title>Donate - Pawfect Match</title>
+		<link rel="stylesheet" href="blog.css">
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<div class="nav">
+					<h1><a href="index.html">Pawfect Match</a></h1>
+					<nav>
+						<b>
+							<a href="index.html">Home</a>&nbsp;
+							<a href="animals.html">Cats</a>&nbsp;
+							<a href="about.html">About</a>&nbsp;
+							<a href="blog.html">Blog</a>&nbsp;
+							<a href="donate.html">Donate</a>&nbsp;
+							<a href="contact.html">Contact</a>&nbsp;
+						</b>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="donation">
+				<h2>Support Our Cause</h2>
+				<p>Help us provide a loving home for cats in need. Your donation makes a difference!</p>
+				
+				<!-- Donation Tier Table -->
+				<h3>Donation Tiers</h3>
+				<table border="1" cellpadding="10" cellspacing="0">
+					<thead>
+						<tr>
+							<th>Donation Tier</th>
+							<th>Amount</th>
+							<th>Impact</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Bronze</td>
+							<td>$10</td>
+							<td>Feeds one cat for a week.</td>
+						</tr>
+						<tr>
+							<td>Silver</td>
+							<td>$25</td>
+							<td>Provides vaccinations for a cat.</td>
+						</tr>
+						<tr>
+							<td>Gold</td>
+							<td>$50</td>
+							<td>Covers a cat's spaying/neutering.</td>
+						</tr>
+						<tr>
+							<td>Platinum</td>
+							<td>$100</td>
+							<td>Supports a full adoption process for one cat.</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<!-- Donation Form -->
+				<form action="/submit-donation" method="POST">
+					<label for="amount">Donation Amount:</label>
+					<input type="number" id="amount" name="amount" placeholder="Enter donation amount" required>
+					
+					<label for="name">Your Name:</label>
+					<input type="text" id="name" name="name" placeholder="Enter your name" required>
+					
+					<label for="email">Email Address:</label>
+					<input type="email" id="email" name="email" placeholder="Enter your email" required>
+					
+					<label for="payment-method">Payment Method:</label>
+					<select id="payment-method" name="payment-method" required>
+						<option value="credit-card">Credit Card</option>
+						<option value="paypal">PayPal</option>
+					</select>
+					
+					<div id="payment-info">
+						<label for="card-number">Credit Card Number:</label>
+						<input type="text" id="card-number" name="card-number" placeholder="Enter your credit card number" required>
+						
+						<label for="expiration-date">Expiration Date:</label>
+						<input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required>
+						
+						<label for="cvv">CVV:</label>
+						<input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+					</div>
+					
+					<button type="submit" class="donate-btn">Donate Now</button>
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Pawfect Match. All rights reserved.</p>
+		</footer>
+
+		<script>
+			// Show/hide payment info based on selected payment method
+			document.getElementById("payment-method").addEventListener("change", function() {
+				if (this.value === "credit-card") {
+					document.getElementById("payment-info").style.display = "block";
+				} else {
+					document.getElementById("payment-info").style.display = "none";
+				}
+			});
+		</script>
+	</body>
+</html>

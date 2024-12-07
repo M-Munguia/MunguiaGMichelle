@@ -1,0 +1,107 @@
+/* General Styles for blog Page */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	background-color: #ffffff;
+	padding: 0 1em;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav a {
+	text-decoration: none;
+	margin: 0 0.5em;
+	color: #333;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav b {
+    font-size: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.image-card {
+    width: 30%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Story Section */
+.story {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.story h2 {
+    color: #333;
+}
+
+.story p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.story a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.story a:hover {
+    text-decoration: underline;
+}
+
+footer {
+	text-align: center;
+	padding: 1em;
+	background-color: #333;
+	color: #fff;
+}

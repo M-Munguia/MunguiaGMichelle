@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Contact us at Pawfect Match to get help, ask questions, or inquire about adopting a feline friend. Reach out via email, phone, or by submitting a message through our form.">
+		<title>Contact Us | Pawfect Match</title>
+		<link rel="stylesheet" href="blog.css">
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<div class="nav">
+					<h1><a href="index.html">Pawfect Match</a></h1>
+					<nav>
+						<b>
+							<a href="index.html">Home</a>&nbsp;
+							<a href="animals.html">Cats</a>&nbsp;
+							<a href="about.html">About</a>&nbsp;
+							<a href="blog.html">Blog</a>&nbsp;
+							<a href="donate.html">Donate</a>&nbsp;
+							<a href="contact.html">Contact</a>&nbsp;
+						</b>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="contact-us">
+				<div class="contact-form">
+					<h2>We're here to help you and your feline friends!</h2>
+					<form action="submit_form.php" method="POST">
+						<label for="name">Name *</label>
+						<input type="text" id="name" name="name" required placeholder="Jane Smith">
+						
+						<label for="email">Email address *</label>
+						<input type="email" id="email" name="email" required placeholder="email@website.com">
+						
+						<label for="phone">Phone number *</label>
+						<input type="tel" id="phone" name="phone" required placeholder="555-555-5555">
+						
+						<label for="message">Message</label>
+						<textarea id="message" name="message" placeholder="Your message here..."></textarea>
+
+						<label>
+							<input type="checkbox" name="consent" required> I allow this website to store my submission so they can respond to my inquiry. *
+						</label>
+						
+						<button type="submit">Submit</button>
+					</form>
+				</div>
+
+				<div class="contact-info">
+					<h3>Get in touch</h3>
+					<p><strong>Email:</strong> <a href="mailto:mm00548@my.westga.edu">mm00548@my.westga.edu</a></p>
+					<p><strong>Location:</strong> <a href="https://www.google.com/maps?q=Carrollton, GA">Carrollton, GA, US</a></p>
+					<p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+
+					<h3>Hours</h3>
+					<ul>
+						<li><span class="day">Monday</span>: 9:00am – 10:00pm</li>
+						<li><span class="day">Tuesday</span>: 9:00am – 10:00pm</li>
+						<li><span class="day">Wednesday</span>: 9:00am – 10:00pm</li>
+						<li><span class="day">Thursday</span>: 9:00am – 10:00pm</li>
+						<li><span class="day">Friday</span>: 9:00am – 10:00pm</li>
+						<li><span class="day">Saturday</span>: 9:00am – 6:00pm</li>
+						<li><span class="day">Sunday</span>: 9:00am – 12:00pm</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; 2024 Pawfect Match. All rights reserved.</p>
+		</footer>
+	</body>
+</html>
